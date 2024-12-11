@@ -12,6 +12,8 @@ class MessagesTableSeeder extends Seeder
      */
     public function run(): void
     {
+        
+
         $messages = [
             [
                 "text" => "Ya puedes hacer el examen",
@@ -19,10 +21,21 @@ class MessagesTableSeeder extends Seeder
             [
                 "text" => "Suerte!",
             ],
+            [
+                "text" => "Esto es una prueba",
+            ],
+            [
+                "text" => "Otra prueba",
+            ],
+
+
         ];
 
         foreach ($messages as $message) {
             Message::create($message);
         }
+
     }
+
+    
 }
