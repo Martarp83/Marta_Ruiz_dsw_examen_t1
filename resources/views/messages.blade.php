@@ -15,6 +15,7 @@
             <ul>
                 @foreach($messages as $message)
                     <li>{{ $message->text }}</li>
+                    <li>{{ $message->imagen }}</li>
                 @endforeach
             </ul>
         @endif
