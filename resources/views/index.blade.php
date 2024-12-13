@@ -10,8 +10,10 @@
     <h1>Todos los Mensajes de la base de datos</h1>
     <table>
         <tr>
+            <th>Id</th>
             <th>Texto</th>
             <th>Imagen</th>
+            <th>Acciones</th>
         </tr>
         @foreach ($datos as $fila)
         <tr>
@@ -29,6 +31,19 @@
             </td>
         </tr>           
         @endforeach
+
+        <label for="mensaje">Selecciona un mensaje:</label>
+        <select id="mensaje" name="mensaje" required>
+            <option value="" disabled selected>Selecciona un mensaje</option>
+        
+            @foreach ($datos as $fila)
+            <option>{{$fila->text}}</option>
+            @endforeach
+
+    </select>
+
+         
+
         
    
 </body>
