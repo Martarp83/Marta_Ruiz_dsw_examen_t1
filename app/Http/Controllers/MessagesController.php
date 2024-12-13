@@ -8,3 +8,4 @@ class MessagesController extends Controller
 {
     //
 }
+
