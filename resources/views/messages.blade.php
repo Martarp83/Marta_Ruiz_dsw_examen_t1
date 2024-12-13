@@ -14,8 +14,12 @@
         @else
             <ul>
                 @foreach($messages as $message)
-                    <li>{{ $message->text }}</li>
-                    <li>{{ $message->imagen }}</li>
+                    <li>{{ $message->text }}
+                    
+                        <!-- Mostrar imagen desde URL o una predeterminada -->
+                        <img src="{{ asset('storage/' . $message->imagen) }}" alt="Imagen de {{ $message->name }}"
+                            style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
+                    </li>
                 @endforeach
             </ul>
         @endif
