@@ -21,13 +21,6 @@ class MessagesTableSeeder extends Seeder
             [
                 "text" => "Suerte!",
             ],
-            [
-                "text" => "Esto es una prueba",
-            ],
-            [
-                "text" => "Otra prueba",
-            ],
-
 
         ];
 
